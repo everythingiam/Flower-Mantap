@@ -1,0 +1,85 @@
+body {
+    max-width: 1280px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:-20px;
+}
+.header-block{
+    width: 100%;
+    height:auto;
+    display:flex;
+}
+.main-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.img-container{
+    display: flex;
+}
+.right-block{
+    display: flex;
+    flex-direction: column;
+    max-width: 672px;
+    align-items: flex-end;
+}
+.top-menu-container{
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-menu{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.menu-pics{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.menu-buttons{
+    display: flex;
+    align-items: flex-start;
+}
+.menu-button{
+    display: flex;
+    width: 111px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    color: var(--akana-green, #156963);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.green{
+    color: white;
+    background-color: #156963;
+}
+.kembang-container{
+    margin-left: 77px;
+}
+.kembang{
+    color: var(--akana-green, #156963);
+    font-family: Montserrat;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-right: 57px;
+}
+.sub-kembang{
+    color: var(--kq-black, #2C1500);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-right: 100px;
+    margin-top: 24px;
+}
