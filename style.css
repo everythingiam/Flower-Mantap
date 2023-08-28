@@ -1,7 +1,7 @@
 body {
     max-width: 1280px;
-   margin-left: auto;
-   margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top:-20px;
    
 }
@@ -12,15 +12,12 @@ body {
 }
 .main-img{
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 }
-.img-container{
-    display: flex;
-}
+
 .right-block{
     display: flex;
     flex-direction: column;
-    max-width: 672px;
     align-items: flex-end;
 }
 .top-menu-container{
@@ -38,6 +35,9 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 40px;
+}
+.menu-img{
+    max-width: 20px;
 }
 .menu-buttons{
     display: flex;
@@ -63,6 +63,7 @@ body {
 }
 .kembang-container{
     margin-left: 77px;
+    margin-right: 57px;
 }
 .kembang{
     color: var(--akana-green, #156963);
@@ -72,7 +73,6 @@ body {
     font-weight: 500;
     line-height: normal;
     margin-bottom: 0;
-    margin-right: 57px;
 }
 .sub-kembang{
     color: var(--kq-black, #2C1500);
@@ -84,16 +84,44 @@ body {
     margin-right: 100px;
     margin-top: 24px;
 }
+
+@media (max-width: 900px){
+    .header-block {
+        display: block;
+    }
+    .menu-button{
+        padding: 8px 5px;
+    }
+    .kembang{
+        margin-block-start: 0;
+    }
+    }
+@media (max-width: 500px){
+    .top-menu-container{
+        padding-right: 25px;
+    }
+    .right-block{
+        align-items: center;
+    }
+    .kembang-container{
+        margin-left: 37px;
+        margin-right: 37px;
+    }
+    .sub-kembang{
+        margin-right: 0;
+    }
+}
+
 .quality-container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     height: auto;
     width: 100%;
 }
 .catalog{
-    display: inline-flex;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 32px;
     margin: 56px;
 }
@@ -127,4 +155,29 @@ body {
 }
 .pic-and-quality-container{
     display:flex;
+}
+
+@media (max-width: 1160px){
+.catalog {
+    flex-wrap: wrap;
+}
+}
+
+
+
+.featured-title-container{
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.featured-title{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
