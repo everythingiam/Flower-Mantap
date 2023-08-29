@@ -2,8 +2,8 @@ body {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    margin-top:-20px;
-   
+    margin-top:-66px;
+    padding: 46px;
 }
 .header-block{
     width: 100%;
@@ -21,7 +21,7 @@ body {
     align-items: flex-end;
 }
 .top-menu-container{
-    padding: 45px;
+    padding: 45px 0 45px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,18 +95,22 @@ body {
     .kembang{
         margin-block-start: 0;
     }
+    .kembang-container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .featured-catalog-container {
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+    }
     
     }
-@media (max-width: 500px){
+@media (max-width: 510px){
     .top-menu-container{
         padding-right: 25px;
     }
     .right-block{
         align-items: center;
-    }
-    .kembang-container{
-        margin-left: 37px;
-        margin-right: 37px;
     }
     .sub-kembang{
         margin-right: 0;
@@ -118,12 +122,12 @@ body {
     justify-content: center;
     height: auto;
     width: 100%;
+    margin-top: 60px;
 }
 .catalog{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
-    margin: 56px;
 }
 .quality-item{
     display:block;
@@ -168,9 +172,19 @@ body {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(1, 1fr);
     }
+    .featured-catalog-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-rows: repeat(5, 1fr) !important;
+    }
+    .featured-img{
+        max-width: 250px;
+    }
 }
-
-
+.featured-plants-container{
+    margin-top: 60px;
+    height: auto;
+    width: 100%;
+}
 .featured-title-container{
     height: 30px;
     width: 100%;
@@ -178,6 +192,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 17px;
 }
 .featured-title{
     color: #000;
@@ -186,4 +201,41 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+.featured-catalog-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.featured-img{
+    width:100%;
+    height: auto;
+}
+.f-s-t-n{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+.f-s-t-p{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 8px;
+}
+.featured-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
