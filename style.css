@@ -13,6 +13,7 @@ body {
 .main-img{
     max-width: 100%;
     height: auto;
+    margin-left: -46px;
 }
 
 .right-block{
@@ -103,7 +104,9 @@ body {
         grid-template-columns: repeat(3, 1fr) !important;
         grid-template-rows: repeat(2, 1fr) !important;
     }
-    
+    .main-img{
+        margin-left: 0;
+    }
     }
 @media (max-width: 510px){
     .top-menu-container{
