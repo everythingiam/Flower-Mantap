@@ -121,6 +121,9 @@ body {
     .sub-kembang{
         margin-right: 0;
     }
+    .get{
+        padding: 0 20px 0 20px !important;
+    }
 }
 
 .quality-container{
@@ -285,3 +288,33 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+.grey-container{
+    margin-top: 90px;
+    background: #F3F4F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.get{
+    max-width: 585px;
+    padding: 68px 0 88px 97px;
+}
+.hand-plant{
+    max-width: 348px;
+    max-height: 360px;
+}
+@media (max-width: 810px){
+    .grey-container{
+        flex-wrap: wrap;
+    }
+    .get{
+        padding: 0 40px 0 40px;
+    }
+    .hand-plant{
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-left:auto;
+    }
+}
+
