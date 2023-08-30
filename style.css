@@ -107,6 +107,9 @@ body {
     .main-img{
         margin-left: 0;
     }
+    .relaxed-container{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
     }
 @media (max-width: 510px){
     .top-menu-container{
@@ -182,6 +185,9 @@ body {
     .featured-img{
         max-width: 250px;
     }
+    .relaxed-container{
+        gap: 20px !important;
+    }
 }
 .featured-plants-container{
     margin-top: 60px;
@@ -241,4 +247,41 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.relaxed-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 80px;
+    margin-top: 90px;
+}
+.relaxed-second-img{
+    max-width:100%;
+    height: auto;
+}
+.relaxed-bold-text{
+    color: var(--kq-black, #2C1500);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+.relaxed-sub-text{
+    color: var(--kq-black, #2C1500);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.relaxed-first-img{
+    width: 100%;
+    height: auto;
+    margin-top:32px;
+}
+.relaxed-first-half{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
