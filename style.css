@@ -58,6 +58,9 @@ body {
     font-weight: 700;
     line-height: 20px;
 }
+.button{
+    text-decoration: none;
+}
 .green{
     color: white;
     background-color: #156963;
@@ -110,6 +113,14 @@ body {
     .relaxed-container{
         grid-template-columns: repeat(1, 1fr) !important;
     }
+    .footer{
+        grid-template-columns: 2fr 1fr !important;
+        grid-template-rows: 1fr !important;
+        gap: 50px !important;
+    }
+    .plantku{
+        padding-right: 10px;
+    }
     }
 @media (max-width: 510px){
     .top-menu-container{
@@ -123,6 +134,11 @@ body {
     }
     .get{
         padding: 0 20px 0 20px !important;
+    }
+    .footer{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+        gap: 40px !important;
     }
 }
 
@@ -289,7 +305,7 @@ body {
     justify-content: space-between;
 }
 .grey-container{
-    margin-top: 90px;
+    margin-top: 80px;
     background: #F3F4F6;
     display: flex;
     justify-content: space-between;
@@ -317,4 +333,92 @@ body {
         margin-left:auto;
     }
 }
+.footer-stroke{
+    border-top: 1px solid #156963;
+    margin-top: 80px;
+}
+.footer-container{
+    max-width: 1000px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 80px;
+    padding-top: 60px;
+}
+.plantku{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.plantku-text{
+    color: var(--akana-green, #156963);
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 100% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.p-house{
+    color: var(--Gray-1, #333);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 24px;
+}
+.p-sub-text{
+    color: var(--Gray-2, #4F4F4F);
+    font-family: Nunito;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.perusahaan{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pe-sub-text{
+    color: #000;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.perusahaan-text{
+    color: #000;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+.text-input{
+    margin: 14px 0 14px 0;
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+}
 
+.text-input:hover {
+    border: 1px solid #aaa;
+  }
+input {
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+  }
