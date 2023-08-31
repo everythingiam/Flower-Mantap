@@ -57,9 +57,18 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
+    transition: 0.3s;
+}
+.button.menu-button1{
+    text-decoration: none;
+    background-color: white;
 }
 .button{
     text-decoration: none;
+}
+.button.menu-button.green:hover {
+    background-color: #0b433f;
+    color: white;
 }
 .green{
     color: white;
